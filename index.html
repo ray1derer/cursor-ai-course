@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI 마스터 클래스 - AI 코딩의 모든 것</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-terminal"></i>
+                    <span>Cursor AI 마스터 클래스</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#curriculum">커리큘럼</a></li>
+                    <li><a href="#features">특징</a></li>
+                    <li><a href="#start">시작하기</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                AI와 함께하는<br>
+                <span class="gradient-text">차세대 코딩 경험</span>
+            </h1>
+            <p class="hero-subtitle">
+                Cursor AI로 코딩 속도를 10배 높이고,<br>
+                더 창의적인 개발자가 되어보세요
+            </p>
+            <div class="hero-buttons">
+                <a href="#curriculum" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> 강좌 시작하기
+                </a>
+                <a href="https://cursor.sh" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Cursor 다운로드
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">체계적인 강의</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">실습 예제</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">실전 프로젝트</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="file-name">app.js</span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="comment">// AI가 코드를 자동완성합니다</span>
+<span class="keyword">function</span> <span class="function">createTodoApp</span>() {
+    <span class="cursor-ai">// Tab 키만 누르면...</span>
+    <span class="ai-generated">const todos = [];
+    
+    function addTodo(text) {
+        todos.push({
+            id: Date.now(),
+            text,
+            completed: false
+        });
+    }
+    
+    function toggleTodo(id) {
+        const todo = todos.find(t => t.id === id);
+        if (todo) {
+            todo.completed = !todo.completed;
+        }
+    }</span>
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Cursor AI의 핵심 기능</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Tab 자동완성</h3>
+                    <p>AI가 다음 코드를 예측하여 Tab 키 하나로 전체 함수를 작성합니다</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>AI Chat</h3>
+                    <p>코드에 대해 질문하고, 설명을 듣고, 즉시 수정사항을 적용합니다</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Cmd+K</h3>
+                    <p>선택한 코드를 AI 명령으로 즉시 편집하고 리팩토링합니다</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Composer</h3>
+                    <p>여러 파일을 동시에 편집하여 대규모 변경을 쉽게 수행합니다</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>YOLO 모드</h3>
+                    <p>AI가 코드를 작성하고 자동으로 실행하여 결과를 확인합니다</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>다중 AI 모델</h3>
+                    <p>GPT-4, Claude 3.5, Gemini 등 최신 AI 모델을 선택하여 사용합니다</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <h2 class="section-title">체계적인 커리큘럼</h2>
+            <div class="curriculum-tabs">
+                <button class="tab-button active" data-tab="basic">
+                    <i class="fas fa-seedling"></i> 기초편
+                </button>
+                <button class="tab-button" data-tab="intermediate">
+                    <i class="fas fa-fire"></i> 중급편
+                </button>
+                <button class="tab-button" data-tab="advanced">
+                    <i class="fas fa-rocket"></i> 고급편
+                </button>
+            </div>
+            
+            <div class="curriculum-content">
+                <div class="tab-content active" id="basic">
+                    <h3>기초편 (1-10강)</h3>
+                    <p class="tab-description">Cursor의 기본 기능을 마스터하고 AI 코딩의 기초를 다집니다</p>
+                    <div class="lessons-grid">
+                        <a href="lessons/lesson01.html" class="lesson-card">
+                            <span class="lesson-number">01</span>
+                            <h4>Cursor 소개와 설치</h4>
+                            <p>AI 코딩의 시작</p>
+                        </a>
+                        <a href="lessons/lesson02.html" class="lesson-card">
+                            <span class="lesson-number">02</span>
+                            <h4>첫 번째 AI 자동완성</h4>
+                            <p>Tab의 마법 경험하기</p>
+                        </a>
+                        <a href="lessons/lesson03.html" class="lesson-card">
+                            <span class="lesson-number">03</span>
+                            <h4>AI Chat 마스터하기</h4>
+                            <p>코드와 대화하기</p>
+                        </a>
+                        <a href="lessons/lesson04.html" class="lesson-card">
+                            <span class="lesson-number">04</span>
+                            <h4>Cmd+K 완벽 가이드</h4>
+                            <p>즉시 편집의 힘</p>
+                        </a>
+                        <a href="lessons/lesson05.html" class="lesson-card">
+                            <span class="lesson-number">05</span>
+                            <h4>프로젝트 컨텍스트</h4>
+                            <p>AI의 이해도 높이기</p>
+                        </a>
+                        <a href="lessons/lesson06.html" class="lesson-card">
+                            <span class="lesson-number">06</span>
+                            <h4>AI 모델 선택</h4>
+                            <p>GPT-4 vs Claude</p>
+                        </a>
+                        <a href="lessons/lesson07.html" class="lesson-card">
+                            <span class="lesson-number">07</span>
+                            <h4>프롬프트 작성법</h4>
+                            <p>효율적인 AI 활용</p>
+                        </a>
+                        <a href="lessons/lesson08.html" class="lesson-card">
+                            <span class="lesson-number">08</span>
+                            <h4>에러 수정과 디버깅</h4>
+                            <p>AI와 문제 해결</p>
+                        </a>
+                        <a href="lessons/lesson09.html" class="lesson-card">
+                            <span class="lesson-number">09</span>
+                            <h4>.cursorrules 작성</h4>
+                            <p>프로젝트별 규칙</p>
+                        </a>
+                        <a href="lessons/lesson10.html" class="lesson-card">
+                            <span class="lesson-number">10</span>
+                            <h4>첫 프로젝트 완성</h4>
+                            <p>Todo 앱 만들기</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="intermediate">
+                    <h3>중급편 (11-20강)</h3>
+                    <p class="tab-description">고급 기능을 활용하여 생산성을 극대화합니다</p>
+                    <div class="lessons-grid">
+                        <a href="lessons/lesson11.html" class="lesson-card">
+                            <span class="lesson-number">11</span>
+                            <h4>Composer 멀티파일</h4>
+                            <p>대규모 리팩토링</p>
+                        </a>
+                        <a href="lessons/lesson12.html" class="lesson-card">
+                            <span class="lesson-number">12</span>
+                            <h4>고급 Chat 기능</h4>
+                            <p>코드베이스 분석</p>
+                        </a>
+                        <a href="lessons/lesson13.html" class="lesson-card">
+                            <span class="lesson-number">13</span>
+                            <h4>코드 리뷰와 개선</h4>
+                            <p>AI의 제안 활용</p>
+                        </a>
+                        <a href="lessons/lesson14.html" class="lesson-card">
+                            <span class="lesson-number">14</span>
+                            <h4>테스트 자동 생성</h4>
+                            <p>TDD with AI</p>
+                        </a>
+                        <a href="lessons/lesson15.html" class="lesson-card">
+                            <span class="lesson-number">15</span>
+                            <h4>문서화 자동화</h4>
+                            <p>주석과 README</p>
+                        </a>
+                        <a href="lessons/lesson16.html" class="lesson-card">
+                            <span class="lesson-number">16</span>
+                            <h4>Git 워크플로우</h4>
+                            <p>커밋 메시지 자동화</p>
+                        </a>
+                        <a href="lessons/lesson17.html" class="lesson-card">
+                            <span class="lesson-number">17</span>
+                            <h4>API 개발</h4>
+                            <p>REST API 구축</p>
+                        </a>
+                        <a href="lessons/lesson18.html" class="lesson-card">
+                            <span class="lesson-number">18</span>
+                            <h4>프론트엔드 가속화</h4>
+                            <p>React 컴포넌트</p>
+                        </a>
+                        <a href="lessons/lesson19.html" class="lesson-card">
+                            <span class="lesson-number">19</span>
+                            <h4>백엔드 로직</h4>
+                            <p>비즈니스 로직</p>
+                        </a>
+                        <a href="lessons/lesson20.html" class="lesson-card">
+                            <span class="lesson-number">20</span>
+                            <h4>풀스택 프로젝트</h4>
+                            <p>블로그 시스템</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="advanced">
+                    <h3>고급편 (21-30강)</h3>
+                    <p class="tab-description">전문가 수준의 AI 코딩 기술을 습득합니다</p>
+                    <div class="lessons-grid">
+                        <a href="lessons/lesson21.html" class="lesson-card">
+                            <span class="lesson-number">21</span>
+                            <h4>YOLO 모드</h4>
+                            <p>자동 실행과 테스트</p>
+                        </a>
+                        <a href="lessons/lesson22.html" class="lesson-card">
+                            <span class="lesson-number">22</span>
+                            <h4>커스텀 AI 규칙</h4>
+                            <p>팀 컨벤션 적용</p>
+                        </a>
+                        <a href="lessons/lesson23.html" class="lesson-card">
+                            <span class="lesson-number">23</span>
+                            <h4>대규모 코드베이스</h4>
+                            <p>수천 파일 관리</p>
+                        </a>
+                        <a href="lessons/lesson24.html" class="lesson-card">
+                            <span class="lesson-number">24</span>
+                            <h4>성능 최적화</h4>
+                            <p>병목 지점 찾기</p>
+                        </a>
+                        <a href="lessons/lesson25.html" class="lesson-card">
+                            <span class="lesson-number">25</span>
+                            <h4>보안 코딩</h4>
+                            <p>취약점 탐지</p>
+                        </a>
+                        <a href="lessons/lesson26.html" class="lesson-card">
+                            <span class="lesson-number">26</span>
+                            <h4>CI/CD 파이프라인</h4>
+                            <p>자동화 워크플로우</p>
+                        </a>
+                        <a href="lessons/lesson27.html" class="lesson-card">
+                            <span class="lesson-number">27</span>
+                            <h4>마이크로서비스</h4>
+                            <p>분산 시스템 설계</p>
+                        </a>
+                        <a href="lessons/lesson28.html" class="lesson-card">
+                            <span class="lesson-number">28</span>
+                            <h4>AI 페어 프로그래밍</h4>
+                            <p>실시간 협업</p>
+                        </a>
+                        <a href="lessons/lesson29.html" class="lesson-card">
+                            <span class="lesson-number">29</span>
+                            <h4>엔터프라이즈 설정</h4>
+                            <p>팀 환경 구축</p>
+                        </a>
+                        <a href="lessons/lesson30.html" class="lesson-card">
+                            <span class="lesson-number">30</span>
+                            <h4>미래의 개발</h4>
+                            <p>AI 네이티브 개발자</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">왜 Cursor인가?</h2>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div></div>
+                    <div class="product cursor">
+                        <img src="assets/cursor-logo.svg" alt="Cursor">
+                        <h4>Cursor</h4>
+                    </div>
+                    <div class="product">
+                        <img src="assets/copilot-logo.svg" alt="GitHub Copilot">
+                        <h4>GitHub Copilot</h4>
+                    </div>
+                    <div class="product">
+                        <img src="assets/vscode-logo.svg" alt="VS Code">
+                        <h4>VS Code + AI</h4>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-name">AI 자동완성</div>
+                    <div class="check"><i class="fas fa-check-circle"></i> 최고 수준</div>
+                    <div class="check"><i class="fas fa-check"></i> 우수</div>
+                    <div class="check"><i class="fas fa-check"></i> 기본</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-name">멀티파일 편집</div>
+                    <div class="check"><i class="fas fa-check-circle"></i> Composer</div>
+                    <div class="check"><i class="fas fa-times"></i></div>
+                    <div class="check"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-name">AI Chat</div>
+                    <div class="check"><i class="fas fa-check-circle"></i> 내장</div>
+                    <div class="check"><i class="fas fa-check"></i> 제한적</div>
+                    <div class="check"><i class="fas fa-times"></i> 별도 설치</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-name">프로젝트 이해</div>
+                    <div class="check"><i class="fas fa-check-circle"></i> 전체 컨텍스트</div>
+                    <div class="check"><i class="fas fa-check"></i> 파일 단위</div>
+                    <div class="check"><i class="fas fa-check"></i> 제한적</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-name">AI 모델 선택</div>
+                    <div class="check"><i class="fas fa-check-circle"></i> 다중 모델</div>
+                    <div class="check"><i class="fas fa-times"></i> 단일 모델</div>
+                    <div class="check"><i class="fas fa-check"></i> 플러그인별</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">개발자들의 후기</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Cursor를 사용한 후 코딩 속도가 정말 10배는 빨라졌어요. 특히 Composer 기능으로 대규모 리팩토링이 너무 쉬워졌습니다."</p>
+                    <div class="author">
+                        <strong>김개발</strong>
+                        <span>풀스택 개발자</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"AI Chat으로 코드 리뷰를 받는 느낌이에요. 버그를 미리 찾아주고, 더 나은 구현 방법을 제안해줍니다."</p>
+                    <div class="author">
+                        <strong>이코딩</strong>
+                        <span>시니어 엔지니어</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"YOLO 모드는 정말 혁신적이에요. AI가 코드를 작성하고 테스트까지 자동으로 실행해주니 개발이 즐거워졌습니다."</p>
+                    <div class="author">
+                        <strong>박프로</strong>
+                        <span>스타트업 CTO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="start">
+        <div class="container">
+            <div class="cta-content">
+                <h2>지금 시작하세요!</h2>
+                <p>AI와 함께하는 코딩의 미래를 경험해보세요</p>
+                <div class="cta-buttons">
+                    <a href="lessons/lesson01.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-play"></i> 첫 강의 시작하기
+                    </a>
+                    <a href="https://cursor.sh/pricing" target="_blank" class="btn btn-secondary btn-large">
+                        <i class="fas fa-tag"></i> 가격 정책 보기
+                    </a>
+                </div>
+                <div class="pricing-info">
+                    <p><i class="fas fa-info-circle"></i> 무료로 시작할 수 있으며, Pro 플랜은 월 $20입니다</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cursor AI 마스터 클래스</h4>
+                    <p>AI 기반 코딩의 새로운 패러다임을 제시합니다</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="#curriculum">커리큘럼</a></li>
+                        <li><a href="#features">주요 기능</a></li>
+                        <li><a href="https://cursor.sh">Cursor 공식 사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>리소스</h4>
+                    <ul>
+                        <li><a href="resources/cheatsheet.html">치트시트</a></li>
+                        <li><a href="resources/prompts.html">프롬프트 템플릿</a></li>
+                        <li><a href="resources/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cursor AI 마스터 클래스. Made with <i class="fas fa-heart"></i> for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
