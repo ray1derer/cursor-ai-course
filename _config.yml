@@ -1,0 +1,6 @@
+# Jekyll configuration for GitHub Pages
+theme: minima
+title: Cursor AI 마스터 클래스
+description: AI와 함께하는 차세대 개발 완벽 가이드
+baseurl: "/cursor-ai-course"
+url: "https://ray1derer.github.io"
